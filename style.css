@@ -8,8 +8,7 @@ padding: 0;
   background-color: lightblue;
 }
 
-ul li {
-  list-style: none;
+ul li {  list-style: none;
   position: relative;
   padding: 12px 8px 12px 40px;
   cursor: pointer;
