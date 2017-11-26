@@ -1,7 +1,7 @@
 * {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -31,7 +31,7 @@ ul li.checked {
   color: #fff;
   text-decoration: line-through;
 }
-
+/* make V symbol */
 ul li.checked::before {
   content: '';
   position: absolute;
@@ -44,3 +44,22 @@ ul li.checked::before {
   height: 15px;
   width: 7px;
 }
+
+ul li::after {
+
+  content: 'x'; /* Добавляемый текст */ 
+  font-family: Arial;
+  padding: 5px;
+  color: gray;
+  
+}
+
+
+
+
+
+
+
+
+
+
