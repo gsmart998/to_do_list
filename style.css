@@ -2,13 +2,56 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial;
 }
 
 .header {
   background-color: lightblue;
 }
 
-ul li {  list-style: none;
+h2 {
+  text-align: center;
+  user-select: none;
+  padding: 20px;
+}
+
+.textField {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  user-select: none;
+}
+
+.myInput {
+  width: 70%;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.addBtn {
+  border: solid gray 2px;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.addBtn:hover {
+  background-color: lightgray;
+}
+
+.addBtn:active {
+  background-color: gray;
+  color: white;
+}
+
+ul li {
+  list-style: none;
   position: relative;
   padding: 12px 8px 12px 40px;
   cursor: pointer;
@@ -31,7 +74,7 @@ ul li.checked {
   color: #fff;
   text-decoration: line-through;
 }
-/* make V symbol */
+
 ul li.checked::before {
   content: '';
   position: absolute;
@@ -45,13 +88,17 @@ ul li.checked::before {
   width: 7px;
 }
 
-ul li::after {
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
 
-  content: 'x'; /* Добавляемый текст */ 
-  font-family: Arial;
-  padding: 5px;
-  color: gray;
-  
+.close:hover {
+  background-color: #f44336;
+  color: white;
+  transition: 0.2s;
 }
 
 
