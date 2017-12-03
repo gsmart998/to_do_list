@@ -3,7 +3,7 @@
 var myList = document.getElementsByTagName("li");
 var i;
 for (i = 0; i < myList.length; i++) {
-	var span = document.createElement("span");
+	var span = document.createElement("div");
 	var text = document.createTextNode("\u00D7");
 	span.className = "close";
 	span.appendChild(text);
@@ -66,9 +66,43 @@ function newElement() {
 	}
 }
 
+//add pen symbol
+addPen();
+function addPen() {
+	var i;
+	for (i = 0; i < myList.length; i++) {
+		var span = document.createElement("span");
+		var text = document.createTextNode("\u270E");
+		span.className = "pen";
+		span.appendChild(text);
+		myList[i].appendChild(span);
+	}
+}
 
+// // pen button edit
 
+// var pen = document.getElementsByClassName("pen");
+// var i;
+// for (i = 0; i < pen.length; i++) {
+// 	pen[i].onclick = function () {
+// 		var inner = this.parentElement;
+// 		inner.innerHTML = "lol";
+		
+// 		var span = document.createElement("span");
+// 		var text = document.createTextNode("\u270E");
+// 		span.className = "pen";
+// 		span.appendChild(text);
+// 		inner.appendChild(span);
 
+// 		var span2 = document.createElement("span");
+// 		var text2 = document.createTextNode("\u00D7");
+// 		span2.className = "close";
+// 		span2.appendChild(text2);
+// 		inner.appendChild(span2);
+
+		
+// 	}
+// }
 
 
 
